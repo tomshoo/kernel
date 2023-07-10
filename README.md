@@ -14,6 +14,12 @@ As of August 22, 2022, there is a blog file (BLOG.md). This will explain some of
 4. Run the bootstrap script (./bootstrap.sh)
 5. Compile the kernel with "cargo build --release", or run the kernel in QEMU, using "cargo run --release".
 
+## Building/Running LibertyOS (Nix)
+1. Clone this repository.
+2. Navigate to the location that you cloned this repository to.
+3. Enable the `nix-command` and `flake` experimental features.
+4. Run `nix develop`. If `direnv` is installed this step can be skipped.
+5. Compile with `cargo build --release`, or run inside qemu using `cargo run --release`.
 
 #### CURRENTLY IMPLEMENTED FEATURES
  - Support for x86-64 architecture
